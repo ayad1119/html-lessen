@@ -1,0 +1,27 @@
+:root {
+    /* Voeg hier de benodigde CSS-variabelen toe */
+    --default-bg: red;
+    --default-font-size: 100px;
+}
+
+.content {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.oefening {
+    min-height: 200px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.oefening1 {
+    background-color: var(--default-bg);
+}
+
+.oefening2 {
+    color: var(--default-text-color);
+}
+.oefening3{
+    font-size: var(--default-font-size);
+}
