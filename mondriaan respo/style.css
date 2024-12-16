@@ -1,0 +1,142 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+ 
+#canvas {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(13, 1fr);
+    grid-template-areas:
+        "rec1"
+        "rec2"
+        "rec3"
+        "rec4"
+        "rec5"
+        "rec6"
+        "rec7"
+        "rec8"
+        "rec9"
+        "rec10"
+        "rec11"
+        "rec12"
+        "rec13";
+}
+ 
+.rectangle {
+    margin: 10px;
+    min-width: 100px;
+    min-height: 100px;
+}
+ 
+.red {
+    background-color: red;
+    color: red;
+}
+ 
+.blue {
+    background-color: blue;
+    color: blue;
+}
+ 
+.yellow {
+    background-color: yellow;
+    color: yellow;
+}
+.white {
+    background-color: white;
+    color: white;
+}
+ 
+.tower {
+    grid-row: span 2;
+}
+ 
+.wide {
+    grid-column: span 2;
+}
+ 
+.xwide {
+    grid-column: span 3;
+}
+ 
+#rec1 {
+    grid-area: rec1;
+}
+ 
+#rec2 {
+    grid-area: rec2;
+}
+ 
+#rec3 {
+    grid-area: rec3;
+}
+ 
+#rec4 {
+    grid-area: rec4;
+}
+ 
+#rec5 {
+    grid-area: rec5;
+}
+ 
+#rec6 {
+    grid-area: rec6;
+}
+ 
+#rec7 {
+    grid-area: rec7;
+}
+ 
+#rec8 {
+    grid-area: rec8;
+}
+ 
+#rec9 {
+    grid-area: rec9;
+}
+ 
+#rec10 {
+    grid-area: rec10;
+}
+ 
+#rec11 {
+    grid-area: rec11;
+}
+ 
+#rec12 {
+    grid-area: rec12;
+}
+ 
+#rec13 {
+    grid-area: rec13;
+}
+ 
+@media (min-width: 500px) and (max-width: 699px) {
+    #canvas {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+        "rec1 rec2 rec3"
+        "rec4 rec5 rec6"
+        "rec7 rec8 rec9"
+        "rec10 rec11 rec12"
+        "rec13 rec14 rec15";
+    }
+}
+ 
+@media (min-width: 700px) {
+    #canvas {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "rec1 rec2 rec2 rec3 rec4"
+            "rec5 rec6 rec7 rec8 rec9"
+            "rec5 rec6 rec7 rec8 rec9"
+            "rec10 rec11 rec12 rec12 rec13";
+    }
+}
