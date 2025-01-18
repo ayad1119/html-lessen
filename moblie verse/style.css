@@ -2,79 +2,83 @@
     display: grid;
     gap: 10px;
     grid-template-areas:
-    "header"
-    "nav"
-    "content"
-    "content2"
-    "content3"
-    "content4"
-    "sidebar"
-    "adv"
-    "footer"
+        "header"
+        "nav"
+        "content"
+        "content2"
+        "content3"
+        "content4"
+        "sidebar"
+        "adv"
+        "footer";
 }
- 
+
 .header {
     grid-area: header;
-    
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(241, 207, 54);
 }
- 
+
 .nav {
     grid-area: nav;
-    
-    
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(241, 207, 54);
 }
- 
+
 .content {
     grid-area: content;
-    
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(241, 207, 54);
 }
 
 .content2 {
     grid-area: content2;
-    
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(241, 207, 54);
 }
+
 .content3 {
     grid-area: content3;
-    
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(241, 207, 54);
 }
+
 .content4 {
     grid-area: content4;
-    
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(241, 207, 54);
 }
- 
+
 .sidebar {
     grid-area: sidebar;
-    
-    
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(241, 207, 54);
 }
- 
+
 .adv {
     grid-area: adv;
-    
-    
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(241, 207, 54);
 }
- 
+
 .footer {
     grid-area: footer;
-
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(241, 207, 54);
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "content content2"
+            "content3 content4"
+            "sidebar adv"
+            "footer footer";
+    }
 }
 
 
