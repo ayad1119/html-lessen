@@ -5,6 +5,9 @@
     "header"
     "nav"
     "content"
+    "content2"
+    "content3"
+    "content4"
     "sidebar"
     "adv"
     "footer"
@@ -12,45 +15,64 @@
  
 .header {
     grid-area: header;
-    padding-left: 10px;
+    
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(241, 207, 54);
 }
  
 .nav {
     grid-area: nav;
-    padding-left: 30px;
-    padding-top: 10px;
+    
+    
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(241, 207, 54);
 }
  
 .content {
     grid-area: content;
-    padding-left: 10px;
+    
+    border: 1px solid rgb(255, 166, 0);
+    background-color: rgb(241, 207, 54);
+}
+
+.content2 {
+    grid-area: content2;
+    
+    border: 1px solid rgb(255, 166, 0);
+    background-color: rgb(241, 207, 54);
+}
+.content3 {
+    grid-area: content3;
+    
+    border: 1px solid rgb(255, 166, 0);
+    background-color: rgb(241, 207, 54);
+}
+.content4 {
+    grid-area: content4;
+    
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(241, 207, 54);
 }
  
 .sidebar {
     grid-area: sidebar;
-    padding-left: 10px;
-    padding-top: 10px;
+    
+    
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(241, 207, 54);
 }
  
 .adv {
     grid-area: adv;
-    padding-left: 10px;
-    padding-top: 10px;
+    
+    
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(241, 207, 54);
 }
  
 .footer {
     grid-area: footer;
-    padding-left: 10px;
+
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(241, 207, 54);
 }
@@ -58,11 +80,12 @@
 
 @media (min-width: 700px) {
     .wrapper {
-        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
-        "header header header"
-        "nav content sidebar"
-        "nav content adv"
-        "footer footer footer";
+            "header header header"
+            "nav content content2"
+            "sidebar content3 content4"
+            "adv adv adv"
+            "footer footer footer";
     }
 }
