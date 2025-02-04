@@ -1,0 +1,92 @@
+/* 1.opdracht */
+ 
+.flex-container {
+    display: flex;
+    background-color: lightgray;
+}
+.flex-item {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px;
+}
+ 
+/* 2.opdracht */
+ 
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+}
+.flexItem {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px;
+}
+ 
+ 
+/* 3.opdracht */
+.flex {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+}
+.item {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px;
+}
+ 
+/* 4.opdracht */
+.flex-box {
+    display: flex;
+    align-items: flex-end;
+    background-color: lightgray;
+}
+.items {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px;
+}
+ 
+/* 5.opdracht */
+.flex-grow-basis{
+    display: flex;
+    background-color: lightgray;
+}
+.flex-grow-basisItem {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px;
+    flex-grow: 1; /* Alle items groeien gelijkmatig */
+    flex-basis: 100px; /* Standaard grootte */
+}
+ 
+/* 6.opdracht */
+.outer-container {
+    display: flex;
+    background-color: lightgray;
+}
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    background-color: lightyellow;
+    margin-right: 20px;
+}
+.nested-item {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px;
+}
+ 
+/* 7.opdracht */
+.grid-layout {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgray;
+}
+.flexbox-item {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px;
+    width: 30%; /* Zorgt ervoor dat de items zich over meerdere regels verdelen */    
+}
